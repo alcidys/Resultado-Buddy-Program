@@ -102,7 +102,7 @@ const mensagens = {
 
     "ionef": `Olá, Ione! Este é o seu grupo de intercambistas:
 
-• Camille Odile Francine Defert Bentley — WhatsApp: 0782480719 | Instagram: cam_btly
+• Camille Odile Francine Defert Bentley — WhatsApp: +33 7 82 48 07 19 | Instagram: cam_btly
 • Maja Natalia Stasiewicz — WhatsApp: +48 732 761 307 | Instagram: maja.stasiewicz
 • Anetta Tángli — WhatsApp: +36203752810 | Instagram: t_anetta_
 • Laeticia Elisa Eugenia Cristina Perrin — WhatsApp: +44 7833 555177 | Instagram: laeticia_perrin`,
