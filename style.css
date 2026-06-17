@@ -37,6 +37,7 @@ input {
     border-radius: 8px;
     outline: none;
     margin-bottom: 16px;
+    box-sizing: border-box;
 }
 
 button {
@@ -56,9 +57,12 @@ button:hover {
 #resultado {
     margin-top: 30px;
     font-size: 18px;
+    white-space: pre-line;
+    text-align: left;
 }
 
 #resultado .erro {
     color: red;
     font-weight: bold;
+    text-align: center;
 }

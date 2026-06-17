@@ -1,9 +1,12 @@
 const mensagens = {
     "alcidysapb": `Olá, Alcidys! Este é o seu grupo de intercambistas:
 
-• David Najafi — Instagram: @davidnajafi
-• Gabriele Cavallaro — Instagram: @gabriele.cavalllaro
-• Jan Tristan Budig — Instagram: @jan_trist`,
+• David Najafi — Instagram: @davidnajafi | WhatsApp: +45 9393 6303
+• Gabriele Cavallaro — Instagram: @gabriele.cavalllaro | WhatsApp: +39 328 713 5997
+• Jan Tristan Budig — Instagram: @jan_trist | WhatsApp: +49 162 426 7823
+• Luke Flier — Instagram: @luke_fl1912 | WhatsApp: +31 6 83776041
+• Samuele Scalisi — Instagram: @samuele_scalisi | WhatsApp: +39 389 480 4712`,
+
     "alvaromrbs": "Olá, Alvaro! Este é o seu grupo de intercambistas:",
     "analajdf": "Olá, Ana! Este é o seu grupo de intercambistas:",
     "analcc1": "Olá, Ana Luiza! Este é o seu grupo de intercambistas:",
@@ -47,6 +50,6 @@ function mostrarMensagem() {
     if (mensagens[usuario]) {
         resultado.innerHTML = `<p>${mensagens[usuario]}</p>`;
     } else {
-        resultado.innerHTML = "<p class='erro'>usuário não encontrado</p>";
+        resultado.innerHTML = "<p class='erro'>Usuário não encontrado.</p>";
     }
 }
