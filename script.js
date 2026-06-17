@@ -12,6 +12,7 @@ const mensagens = {
 
 • Finn Jacob Westphal — Instagram: @finn.wspl | WhatsApp: +49 1575 0639268
 • Matteo Leandro Lenti — Instagram: @matteo.le._
+• Mateo Preve — Instagram: @matepreve | WhatsApp: +39 3755237184
 • Noé Combettes — Instagram: @noe.cbts | WhatsApp: +33 662157452
 • Xavier Yamato Nishikawa — Instagram: @Xavierynx | WhatsApp: +1 2069994495`,
 
@@ -33,13 +34,6 @@ const mensagens = {
 • Maria Mariano Pêgo Chieira — WhatsApp: +351 963887515 | Instagram: mariamarianopego
 • Leonor de Ascensão Fonseca Carreira — WhatsApp: +351 935618257 | Instagram: leonorcarreiraa
 • Anna Aude Elise Le Dréan — WhatsApp: +33769417720 | Instagram: _anna_ld`,
-
-    "caiohn": `Olá, Caio! Este é o seu grupo de intercambistas:
-
-• Alejandro Martínez Ferreira — Instagram: @aleex.mtneez_ | WhatsApp: +34 626479144
-• Leo Nicolas Lappalainen — Instagram: @leo_lapp | WhatsApp: +352 661 921 104
-• Mateo Preve — Instagram: @matepreve | WhatsApp: +39 3755237184
-• Sam Langlet — Instagram: @sam_langlet | WhatsApp: +32 499602349`,
 
     "carolinaor": `Olá, Carolina! Este é o seu grupo de intercambistas:
 
@@ -109,6 +103,7 @@ const mensagens = {
 
     "jesuinomc": `Olá, Jesuino! Este é o seu grupo de intercambistas:
 
+• Alejandro Martínez Ferreira — Instagram: @aleex.mtneez_ | WhatsApp: +34 626479144
 • Daan Gerard Bas Maria Gielis — Instagram: @daan.gielis | WhatsApp: +31 0621199036
 • Juan Andrés Cano Montoya — Instagram: @jcanoo14 | WhatsApp: +34 653026315
 • Yash Amir Nelson Lily Jacob Ramjankhan — Instagram: @yash_rmj | WhatsApp: +31 638450028
@@ -118,6 +113,7 @@ const mensagens = {
 
 • Aiden Nicholas Allender — Instagram: @aidenallender
 • Jules Choulet — Instagram: @jules.choulet
+• Leo Nicolas Lappalainen — Instagram: @leo_lapp | WhatsApp: +352 661 921 104
 • Maxence Alexis Arthur Lisle — Instagram: @maxence_lsle | WhatsApp: +33 6 62 16 12 46
 • Victor Brandt Kristensen — WhatsApp: +45 23865940`,
 
@@ -138,7 +134,8 @@ const mensagens = {
 • David Barreira Neves — WhatsApp: +352 621 267 473
 • Elyes Mamlouk — Instagram: @elyesmamlouk__ | WhatsApp: +41 0783397666
 • Makary Maximilian Czekajlo — Instagram: @__bbmak | WhatsApp: +1 804-300-3926
-• Philipp Louis Nietgen — Instagram: @phil.ipp.ni | WhatsApp: +49 1573 3857087`,
+• Philipp Louis Nietgen — Instagram: @phil.ipp.ni | WhatsApp: +49 1573 3857087
+• Sam Langlet — Instagram: @sam_langlet | WhatsApp: +32 499602349`,
 
     "mariacamrm": `Olá, Maria! Este é o seu grupo de intercambistas:
 
