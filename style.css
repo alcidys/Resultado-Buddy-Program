@@ -12,7 +12,7 @@ body {
             rgba(0, 0, 0, 0.35),
             rgba(0, 0, 0, 0.35)
         ),
-        url("fundo.png");
+        url("Gemini_Generated_Image_lly992lly992lly9.png");
 
     background-size: cover;
     background-position: center;
@@ -38,10 +38,13 @@ body {
 
     padding: 50px;
 
-    box-shadow:
-        0 10px 40px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
 
     backdrop-filter: blur(5px);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 h1 {
@@ -66,16 +69,20 @@ h1 {
 }
 
 .busca {
+    width: 100%;
+
     display: flex;
     justify-content: center;
+    align-items: center;
+
     gap: 10px;
 
     margin-bottom: 40px;
 }
 
-input {
+.busca input {
     width: 100%;
-    max-width: 450px;
+    max-width: 560px;
 
     padding: 15px 18px;
 
@@ -85,13 +92,17 @@ input {
     border-radius: 12px;
 
     outline: none;
+
+    flex: 0 1 560px;
 }
 
-input:focus {
+.busca input:focus {
     border-color: #2d5be3;
 }
 
-button {
+.busca button {
+    flex: 0 0 auto;
+
     padding: 15px 30px;
 
     border: none;
@@ -108,20 +119,26 @@ button {
     transition: 0.3s;
 }
 
-button:hover {
+.busca button:hover {
     background-color: #1e46c4;
 }
 
 #resultado {
+    width: 100%;
+
     margin-top: 20px;
 
     font-size: 1.15rem;
-    line-height: 1.7;
+    line-height: 1.8;
 
     color: #222;
 
     white-space: pre-wrap;
     word-break: break-word;
+}
+
+#resultado p {
+    margin-bottom: 12px;
 }
 
 .erro {
@@ -144,12 +161,14 @@ button:hover {
         align-items: center;
     }
 
-    input {
+    .busca input {
         max-width: 100%;
+        flex: none;
     }
 
-    button {
+    .busca button {
         width: 100%;
         max-width: 300px;
     }
 }
+
