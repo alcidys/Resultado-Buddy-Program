@@ -59,12 +59,14 @@ const mensagens = {
 • Aleksi Paul Lappalainen — Instagram: @aleksi_lapp | WhatsApp: +33 7 44 85 68 12
 • Ben Georg Wolf Beltermann — Instagram: @Ben.beltermann | WhatsApp: +49 15116009483
 • Gyan Teejay Brian Jansen — Instagram: @Gyan.jansen | WhatsApp: +31 6 15152893
-• Léon Patrick Titus De Baets — Instagram: @leondebaets | WhatsApp: +32 471 06 90 09`,
+• Léon Patrick Titus De Baets — Instagram: @leondebaets | WhatsApp: +32 471 06 90 09
+• Thomas François Lucas Gueguen — Instagram: @ggn.thms`,
 
     "felipeqs": `Olá, Felipe! Este é o seu grupo de intercambistas:
 
 • Boldizsar Hajdu — WhatsApp: +36 301568961
 • Lorenzo Ioppoli — Instagram: @lorenzo_ioppoli_ | WhatsApp: +39 3889298652
+• Mattheus Pieter Jan de Ridder — Instagram: @mattekdr | WhatsApp: +31 629382055
 • Mees Ole Schat — Instagram: @meesschat | WhatsApp: +31 6 40672992
 • Wilhelm Schubert — Instagram: @Wilhelm_schubert | WhatsApp: +46 723877650`,
 
@@ -72,6 +74,7 @@ const mensagens = {
 
 • Adrian Primorac — Instagram: @primo.jpeg | WhatsApp: +47 91916968
 • Joan Casals Orriols — Instagram: @joancasals | WhatsApp: +34 644740807
+• Kerem Uğur — Instagram: @kerem.uguur | WhatsApp: +32 471 29 13 58
 • Mattéo Duval — Instagram: @matt_duvallll | WhatsApp: +33 7 71 60 71 37
 • Thomas Alexis Marc Marie de Montille — Instagram: @thomas.dmtl | WhatsApp: +33 782835501`,
 
@@ -169,18 +172,12 @@ const mensagens = {
 • Felix Bernhard Adrianus van Wesenbeeck — Instagram: @Felixvwesenbeeck
 • Gaspard Albert Segers — Instagram: @gaspardsegers | WhatsApp: +32 472 81 11 86`,
 
-    "pedrogkmc": `Olá, Pedro Guilherme! Este é o seu grupo de intercambistas:
-
-• Kerem Uğur — Instagram: @kerem.uguur | WhatsApp: +32 471 29 13 58
-• Luka-Gabriel Wieczorek — Instagram: @luka.wcz | WhatsApp: +49 1774996134
-• Mattheus Pieter Jan de Ridder — Instagram: @mattekdr | WhatsApp: +31 629382055
-• Thomas François Lucas Gueguen — Instagram: @ggn.thms`,
-
     "ricardobsb": `Olá, Ricardo! Este é o seu grupo de intercambistas:
 
 • Adrià Benitez Fernandez — Instagram: @adribenit3z | WhatsApp: +34 684185659
 • Andrej Kolbl — WhatsApp: +41 79 950 98 23
 • Immanuel Fikadu Hailemichael — Instagram: @immanuelhailemichael | WhatsApp: +46 707629886
+• Luka-Gabriel Wieczorek — Instagram: @luka.wcz | WhatsApp: +49 1774996134
 • Noah Kalstad Vedfelt — Instagram: @noahvedfelt | WhatsApp: +45 22411844`,
 
     "saracb": `Olá, Sara! Este é o seu grupo de intercambistas:
