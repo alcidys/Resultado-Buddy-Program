@@ -155,7 +155,7 @@ const mensagens = {
     "marialbj": `Olá, Maria Luiza! Este é o seu grupo de intercambistas:
 
 • Jade Hannaert — WhatsApp: +32491328297 | Instagram: jade_hnnt
-• Lucia Fatima Saraiva — WhatsApp: +491629248580
+• Lucia Fatima Saraiva — WhatsApp: +491629248589
 • Rachel Eva Marguerite Beck — WhatsApp: +32 0474 688 608 | Instagram: rachel.bck`,
 
     "miguelfod": `Olá, Miguel! Este é o seu grupo de intercambistas:
