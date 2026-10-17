@@ -415,30 +415,45 @@ function mostrarMensagem() {
     }
 
     const entrevista = entrevistas[usuario];
-    const titulo = document.createElement("h2");
-    titulo.textContent = entrevista.nome;
-    const detalhes = document.createElement("dl");
+    const saudacao = document.createElement("p");
+    const nome = document.createElement("strong");
+    nome.textContent = entrevista.nome;
+    saudacao.append("Prezado ", nome, ", segue a confirmação do seu agendamento:");
+
     const data = new Date(entrevista.data + "T12:00:00-03:00");
+    const dataFormatada = new Intl.DateTimeFormat("pt-BR", {
+        day: "numeric", month: "long", timeZone: "America/Sao_Paulo"
+    }).format(data);
+    const local = entrevista.local.trim() || LOCAL_PADRAO.trim() || "a confirmar";
+    const localFormatado = local.toLowerCase() === "a confirmar" ? "a confirmar" : local;
+    const detalhes = document.createElement("ul");
     const campos = [
-        ["Data", new Intl.DateTimeFormat("pt-BR", {
-            weekday: "long", day: "2-digit", month: "2-digit", year: "numeric",
-            timeZone: "America/Sao_Paulo"
-        }).format(data)],
-        ["Horário", `${entrevista.inicio} às ${entrevista.fim} (horário de Brasília)`],
-        ["Local", entrevista.local.trim() || LOCAL_PADRAO.trim() || "A confirmar"]
+        ["📅 Data e horário da entrevista:", `${dataFormatada}, ${entrevista.inicio}`],
+        ["📍Local:", localFormatado.endsWith(".") ? localFormatado : `${localFormatado}.`]
     ];
     for (const [rotulo, valor] of campos) {
-        const termo = document.createElement("dt");
-        termo.textContent = rotulo;
-        const descricao = document.createElement("dd");
-        descricao.textContent = valor;
-        detalhes.append(termo, descricao);
+        const item = document.createElement("li");
+        const destaque = document.createElement("strong");
+        destaque.textContent = rotulo;
+        item.append(destaque, ` ${valor}`);
+        detalhes.append(item);
     }
-    resultado.append(titulo, detalhes);
+
+    const despedida = document.createElement("p");
+    despedida.textContent = "Nos vemos em breve! 💙";
+    const assinatura = document.createElement("p");
+    assinatura.className = "assinatura";
+    const equipe = document.createElement("strong");
+    equipe.textContent = "Equipe de Experiência Internacional & Equipe Buddy Program";
+    const area = document.createElement("em");
+    area.textContent = "Student Life";
+    assinatura.append(equipe, document.createElement("br"), area);
+    resultado.append(saudacao, detalhes, despedida, assinatura);
 }
 
 document.getElementById("busca").addEventListener("submit", (evento) => {
     evento.preventDefault();
     mostrarMensagem();
 });
+
 

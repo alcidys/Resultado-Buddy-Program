@@ -29,10 +29,6 @@ button:hover { background: #2046b4; }
 input:focus-visible, button:focus-visible { outline: 3px solid #2d5be3; outline-offset: 3px; }
 #resultado { overflow-wrap: anywhere; }
 #resultado:not(:empty) { margin-top: 30px; padding: 24px; background: #f3f6fc; border: 1px solid #dfe6f1; border-radius: 14px; }
-#resultado h2 { font-size: 1.25rem; line-height: 1.45; margin-bottom: 20px; }
-#resultado dl { display: grid; grid-template-columns: 76px minmax(0, 1fr); gap: 16px 18px; font-size: .95rem; line-height: 1.6; }
-#resultado dt { font-weight: 700; color: #596373; }
-#resultado dd { margin: 0; }
 .erro { color: #b42318; line-height: 1.6; }
 @media (max-width: 540px) {
     body { padding: 24px 16px; }
@@ -41,6 +37,11 @@ input:focus-visible, button:focus-visible { outline: 3px solid #2d5be3; outline-
     .campos-busca { flex-direction: column; }
     button { width: 100%; }
     #resultado:not(:empty) { padding: 20px 16px; }
-    #resultado dl { grid-template-columns: 1fr; gap: 4px; }
-    #resultado dd + dt { margin-top: 12px; }
 }
+
+#resultado { font-size: 1rem; line-height: 1.75; }
+#resultado p + p { margin-top: 20px; }
+#resultado ul { margin: 22px 0; padding-left: 24px; }
+#resultado li + li { margin-top: 12px; }
+#resultado .assinatura { margin-top: 28px; }
+#resultado .assinatura em { color: #596373; }
