@@ -398,16 +398,19 @@ function mostrarMensagem() {
     }
 
     if (!entrada) {
-        mostrarErro("Digite seu usuário ou e-mail do Insper.");
+        mostrarErro("Digite seu usuário do Insper.");
         return;
     }
 
-    const usuario = entrada.endsWith("@al.insper.edu.br")
-        ? entrada.slice(0, -"@al.insper.edu.br".length)
-        : entrada;
+    if (entrada.includes("@")) {
+        mostrarErro("Digite apenas seu usuário, sem o e-mail.");
+        return;
+    }
+
+    const usuario = entrada;
 
     if (!Object.hasOwn(entrevistas, usuario)) {
-        mostrarErro("Usuário não encontrado. Confira seu usuário ou e-mail do Insper.");
+        mostrarErro("Usuário não encontrado. Confira seu usuário do Insper.");
         return;
     }
 
@@ -438,3 +441,4 @@ document.getElementById("busca").addEventListener("submit", (evento) => {
     evento.preventDefault();
     mostrarMensagem();
 });
+

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrevistas — Buddy Program 2027.1</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="container">
+        <h1>Entrevistas</h1>
+        <p class="subtitulo">Buddy Program 2027.1</p>
+        <p class="instrucao">Consulte a data, o horário e o local da sua entrevista.</p>
+        <form id="busca" class="busca">
+            <label for="usuario">Usuário ou e-mail do Insper</label>
+            <div class="campos-busca">
+                <input type="text" id="usuario" name="usuario"
+                    placeholder="Ex.: anacb8 ou anacb8@al.insper.edu.br"
+                    autocomplete="username" autocapitalize="none" spellcheck="false"
+                    aria-controls="resultado">
+                <button type="submit">Consultar</button>
+            </div>
+        </form>
+        <div id="resultado" role="status" aria-live="polite" aria-atomic="true"></div>
+    </main>
+</body>
+</html>

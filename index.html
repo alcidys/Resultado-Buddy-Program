@@ -9,16 +9,19 @@
 </head>
 <body>
     <main class="container">
-        <h1>Entrevistas</h1>
-        <p class="subtitulo">Buddy Program 2027.1</p>
-        <p class="instrucao">Consulte a data, o horário e o local da sua entrevista.</p>
+        <header class="cabecalho">
+            <p class="subtitulo">Buddy Program <span>2027.1</span></p>
+            <h1>Sua entrevista</h1>
+            <p class="instrucao">Consulte a data, o horário e o local da sua entrevista.</p>
+        </header>
         <form id="busca" class="busca">
-            <label for="usuario">Usuário ou e-mail do Insper</label>
+            <label for="usuario">Usuário do Insper</label>
+            <p id="ajuda-usuario" class="ajuda">Informe seu usuário.</p>
             <div class="campos-busca">
                 <input type="text" id="usuario" name="usuario"
-                    placeholder="Ex.: anacb8 ou anacb8@al.insper.edu.br"
+                    placeholder="Digite seu usuário"
                     autocomplete="username" autocapitalize="none" spellcheck="false"
-                    aria-controls="resultado">
+                    aria-describedby="ajuda-usuario" aria-controls="resultado">
                 <button type="submit">Consultar</button>
             </div>
         </form>
