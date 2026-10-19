@@ -38,7 +38,7 @@ const entrevistas = {
     "data": "2026-10-19",
     "inicio": "09:40",
     "fim": "10:00",
-    "local": "Sala Mila Fang — Biblioteca — Quatá 300"
+    "local": "Sala “Reunião 03” — Quatá 300 — térreo do Edifício Claudio Haddad"
   },
   "carloselfs": {
     "nome": "Carlos Eduardo Lima Franco da Silva",
