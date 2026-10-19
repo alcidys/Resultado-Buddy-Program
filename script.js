@@ -108,7 +108,7 @@ const entrevistas = {
     "data": "2026-10-20",
     "inicio": "12:10",
     "fim": "12:30",
-    "local": "a confirmar"
+    "local": "Sala “Reunião 01” — Quatá 300 — térreo do Edifício Claudio Haddad"
   },
   "isabellaas1": {
     "nome": "Isabella Araujo Soares",
@@ -360,7 +360,7 @@ const entrevistas = {
     "data": "2026-10-26",
     "inicio": "10:00",
     "fim": "10:20",
-    "local": "a confirmar"
+    "local": "Sala “Reunião 03” — Quatá 300 — térreo do Edifício Claudio Haddad"
   },
   "anacb8": {
     "nome": "Ana Clara Bernardes",
