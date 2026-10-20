@@ -77,10 +77,10 @@ const entrevistas = {
   },
   "pedropag": {
     "nome": "Pedro Pardo Amaral Gomes",
-    "data": "2026-10-19",
-    "inicio": "15:00",
-    "fim": "15:20",
-    "local": "Sala “Reunião 04” — Quatá 300 — térreo do Edifício Claudio Haddad"
+    "data": "2026-10-20",
+    "inicio": "11:00",
+    "fim": "11:20",
+    "local": "Sala “Reunião 01” — Quatá 300 — térreo do Edifício Claudio Haddad"
   },
   "jhonathangl": {
     "nome": "Jhonathan Goncalves Lopes",
