@@ -182,17 +182,17 @@ const entrevistas = {
   },
   "sophiaebs": {
     "nome": "Sophia Elisa Batista dos Santos",
-    "data": "2026-10-21",
-    "inicio": "19:00",
-    "fim": "19:20",
-    "local": "Sala “Reunião 03” — 3º andar, Quatá 200"
+    "data": "à agendar",
+    "inicio": "à agendar",
+    "fim": "à agendar",
+    "local": "à confirmar"
   },
   "juliacvf": {
     "nome": "Julia de Carvalho Vexel Fontes",
-    "data": "2026-10-21",
-    "inicio": "19:20",
-    "fim": "19:40",
-    "local": "Sala “Reunião 03” — 3º andar, Quatá 200"
+    "data": "à agendar",
+    "inicio": "à agendar",
+    "fim": "à agendar",
+    "local": "à confirmar"
   },
   "giovannasf3": {
     "nome": "Giovanna da Silva Ferraz",
