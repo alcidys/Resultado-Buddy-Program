@@ -161,9 +161,9 @@ const entrevistas = {
   },
   "mariaertv": {
     "nome": "Maria Eduarda Reale Tallavasso Vassovinio",
-    "data": "2026-10-21",
-    "inicio": "13:40",
-    "fim": "14:00",
+    "data": "2026-10-23",
+    "inicio": "11:10",
+    "fim": "11:30",
     "local": "Sala “Reunião 01” — Quatá 300 — térreo do Edifício Claudio Haddad"
   },
   "isadorampg": {
@@ -175,9 +175,9 @@ const entrevistas = {
   },
   "luiserah": {
     "nome": "Luis Ernesto Rowland Abreu Hudson",
-    "data": "2026-10-21",
-    "inicio": "14:40",
-    "fim": "15:00",
+    "data": "2026-10-23",
+    "inicio": "10:50",
+    "fim": "11:10",
     "local": "Sala “Reunião 01” — Quatá 300 — térreo do Edifício Claudio Haddad"
   },
   "sophiaebs": {
