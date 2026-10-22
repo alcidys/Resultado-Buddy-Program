@@ -189,17 +189,17 @@ const entrevistas = {
   },
   "juliacvf": {
     "nome": "Julia de Carvalho Vexel Fontes",
-    "data": "à agendar",
-    "inicio": "à agendar",
-    "fim": "à agendar",
-    "local": "à confirmar"
+    "data": "2026-10-22",
+    "inicio": "18:00",
+    "fim": "18:20",
+    "local": "Sala “Reunião 04” — Quatá 300 — térreo do Edifício Claudio Haddad"
   },
   "giovannasf3": {
     "nome": "Giovanna da Silva Ferraz",
-    "data": "2026-10-21",
-    "inicio": "19:40",
-    "fim": "20:00",
-    "local": "Sala “Reunião 03” — 3º andar, Quatá 200"
+    "data": "2026-10-22",
+    "inicio": "16:00",
+    "fim": "16:20",
+    "local": "Sala “Reunião 04” — Quatá 300 — térreo do Edifício Claudio Haddad"
   },
   "nicolemm2": {
     "nome": "Nicole Marques Machado",
