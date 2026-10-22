@@ -309,8 +309,8 @@ const entrevistas = {
   "eronms": {
     "nome": "Eron de Miranda Stawinski",
     "data": "2026-10-22",
-    "inicio": "20:00",
-    "fim": "20:20",
+    "inicio": "19:40",
+    "fim": "20:00",
     "local": "Sala “Reunião 04” — Quatá 300 — térreo do Edifício Claudio Haddad"
   },
   "gabrielarb5": {
