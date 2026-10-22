@@ -168,9 +168,9 @@ const entrevistas = {
   },
   "isadorampg": {
     "nome": "Isadora Matos Pires Guerra",
-    "data": "2026-10-21",
-    "inicio": "14:20",
-    "fim": "14:40",
+    "data": "2026-10-22",
+    "inicio": "16:20",
+    "fim": "16:40",
     "local": "Sala “Reunião 01” — Quatá 300 — térreo do Edifício Claudio Haddad"
   },
   "luiserah": {
