@@ -171,7 +171,7 @@ const entrevistas = {
     "data": "2026-10-22",
     "inicio": "16:20",
     "fim": "16:40",
-    "local": "Sala “Reunião 01” — Quatá 300 — térreo do Edifício Claudio Haddad"
+    "local": "Sala “Reunião 04” — Quatá 300 — térreo do Edifício Claudio Haddad"
   },
   "luiserah": {
     "nome": "Luis Ernesto Rowland Abreu Hudson",
