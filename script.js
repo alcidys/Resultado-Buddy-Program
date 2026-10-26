@@ -181,12 +181,12 @@ const entrevistas = {
     "local": "Sala “Reunião 01” — Quatá 300 — térreo do Edifício Claudio Haddad"
   },
   "sophiaebs": {
-    "nome": "Sophia Elisa Batista dos Santos",
-    "data": "à agendar",
-    "inicio": "à agendar",
-    "fim": "à agendar",
-    "local": "à confirmar"
-  },
+  "nome": "Sophia Elisa Batista dos Santos",
+  "data": "2026-10-26",
+  "inicio": "13:00",
+  "fim": "13:20",
+  "local": "Sala “Reunião 03” — Quatá 300 — térreo do Edifício Claudio Haddad"
+},
   "juliacvf": {
     "nome": "Julia de Carvalho Vexel Fontes",
     "data": "2026-10-22",
@@ -455,5 +455,6 @@ document.getElementById("busca").addEventListener("submit", (evento) => {
     evento.preventDefault();
     mostrarMensagem();
 });
+
 
 
