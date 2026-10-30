@@ -1,388 +1,118 @@
-// Buddy Program 2027.1 — entrevistas em outubro de 2026.
-// Altere LOCAL_PADRAO se todas as entrevistas forem no mesmo espaço.
-// Para exceções, preencha o campo local de cada participante abaixo.
-// Um local vazio usa LOCAL_PADRAO; sem definição, aparece "A confirmar".
-const LOCAL_PADRAO = "A confirmar";
-
-const entrevistas = {
-  "luisafov": {
-    "nome": "Luisa Farias de Oliveira Valente",
-    "data": "2026-10-19",
-    "inicio": "08:00",
-    "fim": "08:20",
-    "local": "Sala Mila Fang — Biblioteca — Quatá 300"
+// Buddy Program 2026.2 — horas complementares.
+// Dados importados de "horas - 26.2.xlsx". Atualize esta lista se a planilha mudar.
+const participantes = {
+  "alcidysapb": {
+    "nome": "ALCIDYS ALVES PEREIRA BARBOSA",
+    "horas": 30
   },
-  "anams5": {
-    "nome": "Ana de Medeiros Silvestre",
-    "data": "2026-10-19",
-    "inicio": "08:40",
-    "fim": "09:00",
-    "local": "Sala Mila Fang — Biblioteca — Quatá 300"
+  "alvaromrbs": {
+    "nome": "ALVARO MODESTO RIBEIRO BORGES DE SOUZA",
+    "horas": 20
   },
-  "carolinae3": {
-    "nome": "Carolina Eskenazi",
-    "data": "2026-10-19",
-    "inicio": "09:00",
-    "fim": "09:20",
-    "local": "Sala Mila Fang — Biblioteca — Quatá 300"
+  "analajdf": {
+    "nome": "ANA LUISA ALMEIDA JASMINS DIAS FARINHA",
+    "horas": 5
   },
-  "leonardofb": {
-    "nome": "Leonardo Ferrante Baldacci",
-    "data": "2026-10-19",
-    "inicio": "09:20",
-    "fim": "09:40",
-    "local": "Sala Mila Fang — Biblioteca — Quatá 300"
+  "analcc1": {
+    "nome": "ANA LUIZA DA CONCEICAO CORDEIRO",
+    "horas": 30
   },
-  "thaisrl1": {
-    "nome": "Thaís Rezende Lorena",
-    "data": "2026-10-19",
-    "inicio": "09:40",
-    "fim": "10:00",
-    "local": "Sala “Reunião 03” — Quatá 300 — térreo do Edifício Claudio Haddad"
+  "beatrizdh": {
+    "nome": "BEATRIZ DREYFUSS HURTADO",
+    "horas": 20
   },
-  "carloselfs": {
-    "nome": "Carlos Eduardo Lima Franco da Silva",
-    "data": "2026-10-19",
-    "inicio": "13:00",
-    "fim": "13:20",
-    "local": "Sala “Reunião 04” — Quatá 300 — térreo do Edifício Claudio Haddad"
+  "carolinaor": {
+    "nome": "CAROLINA OSHIRO ROSSI",
+    "horas": 20
   },
-  "pedroacfa": {
-    "nome": "Pedro Augusto Cruz Faria Alves",
-    "data": "2026-10-19",
-    "inicio": "13:20",
-    "fim": "13:40",
-    "local": "Sala “Reunião 04” — Quatá 300 — térreo do Edifício Claudio Haddad"
+  "celinespl": {
+    "nome": "CELINE SHINRUH PENG LU",
+    "horas": 20
   },
-  "rafaelsa9": {
-    "nome": "Rafael Souto Azevedo",
-    "data": "2026-10-19",
-    "inicio": "13:40",
-    "fim": "14:00",
-    "local": "Sala “Reunião 04” — Quatá 300 — térreo do Edifício Claudio Haddad"
+  "enzouc": {
+    "nome": "ENZO URIOSTE CANAVERO",
+    "horas": 20
   },
-  "valentinarbpm": {
-    "nome": "Valentina Rosa Boni Pessolato Mioto",
-    "data": "2026-10-19",
-    "inicio": "14:00",
-    "fim": "14:20",
-    "local": "Sala “Reunião 04” — Quatá 300 — térreo do Edifício Claudio Haddad"
+  "felipecm13": {
+    "nome": "FELIPE DA COSTA MENUSIER",
+    "horas": 10
   },
-  "rafaelaam1": {
-    "nome": "Rafaela Abbud Melillo",
-    "data": "2026-10-19",
-    "inicio": "14:20",
-    "fim": "14:40",
-    "local": "Sala “Reunião 04” — Quatá 300 — térreo do Edifício Claudio Haddad"
+  "felipeqs": {
+    "nome": "FELIPE QUINTAS SALVARANI",
+    "horas": 20
   },
-  "pedropag": {
-    "nome": "Pedro Pardo Amaral Gomes",
-    "data": "2026-10-20",
-    "inicio": "11:00",
-    "fim": "11:20",
-    "local": "Sala “Reunião 01” — Quatá 300 — térreo do Edifício Claudio Haddad"
+  "fellipebvs": {
+    "nome": "FELLIPE BERNARDES VAZ SILVA",
+    "horas": 20
   },
-  "jhonathangl": {
-    "nome": "Jhonathan Goncalves Lopes",
-    "data": "2026-10-19",
-    "inicio": "15:40",
-    "fim": "16:00",
-    "local": "Sala “Reunião 04” — Quatá 300 — térreo do Edifício Claudio Haddad"
+  "gabrielads1": {
+    "nome": "GABRIELA DALTRO SUZARTE",
+    "horas": 20
   },
-  "joaovs10": {
-    "nome": "Joao Victor dos Santos",
-    "data": "2026-10-20",
-    "inicio": "10:00",
-    "fim": "10:20",
-    "local": "Sala “Reunião 01” — Quatá 300 — térreo do Edifício Claudio Haddad"
+  "guilhermenb": {
+    "nome": "GUILHERME NEVES BATISTA",
+    "horas": 20
   },
-  "analmn1": {
-    "nome": "Ana Laura Matias Nader",
-    "data": "2026-10-20",
-    "inicio": "10:30",
-    "fim": "10:50",
-    "local": "Sala “Reunião 01” — Quatá 300 — térreo do Edifício Claudio Haddad"
+  "iaravsp": {
+    "nome": "IARA VIVIAN SOUSA PINTO",
+    "horas": 20
   },
-  "carloseccb": {
-    "nome": "Carlos Eduardo Comenale Carrara Bouchabki",
-    "data": "2026-10-20",
-    "inicio": "12:10",
-    "fim": "12:30",
-    "local": "Sala “Reunião 01” — Quatá 300 — térreo do Edifício Claudio Haddad"
+  "ionef": {
+    "nome": "IONE FORESTI",
+    "horas": 30
   },
-  "isabellaas1": {
-    "nome": "Isabella Araujo Soares",
-    "data": "2026-10-20",
-    "inicio": "14:00",
-    "fim": "14:20",
-    "local": "Sala “Reunião 01” — Quatá 300 — térreo do Edifício Claudio Haddad"
+  "jesuinomc": {
+    "nome": "JESUINO MENDES CASSAMA",
+    "horas": 10
   },
-  "vincell": {
-    "nome": "Vince de Luca Liu",
-    "data": "2026-10-20",
-    "inicio": "14:20",
-    "fim": "14:40",
-    "local": "Sala “Reunião 01” — Quatá 300 — térreo do Edifício Claudio Haddad"
+  "joaofmt": {
+    "nome": "JOAO FRANCISCO MARQUES TIRINTAN",
+    "horas": 20
   },
-  "felipers10": {
-    "nome": "Felipe Ribeiro Soerensen",
-    "data": "2026-10-20",
-    "inicio": "14:40",
-    "fim": "15:00",
-    "local": "Sala “Reunião 01” — Quatá 300 — térreo do Edifício Claudio Haddad"
+  "joaovps2": {
+    "nome": "JOÃO VICTOR PIOVANI DOS SANTOS",
+    "horas": 10
   },
-  "diegogts": {
-    "nome": "Diego Greco Teti Siqueira",
-    "data": "2026-10-20",
-    "inicio": "15:00",
-    "fim": "15:20",
-    "local": "Sala “Reunião 01” — Quatá 300 — térreo do Edifício Claudio Haddad"
+  "juliabp2": {
+    "nome": "JULIA BARRIOS DE PINHO",
+    "horas": 5
   },
-  "luizatnr": {
-    "nome": "Luiza Tozzo Nakai Ribeiro",
-    "data": "2026-10-20",
-    "inicio": "19:00",
-    "fim": "19:20",
-    "local": "Sala “Reunião 07” — 2º andar, Quatá 200"
+  "juliald": {
+    "nome": "JULIA LOURENCO DIAS",
+    "horas": 15
   },
-  "dorapm": {
-    "nome": "Dora Paione Milner",
-    "data": "2026-10-20",
-    "inicio": "19:20",
-    "fim": "19:40",
-    "local": "Sala “Reunião 07” — 2º andar, Quatá 200"
+  "lucasfcs": {
+    "nome": "LUCAS FRANCISCO CASSARA DE SOUZA",
+    "horas": 20
   },
-  "ruancos": {
-    "nome": "Ruan Cesar Oliveira da Silva",
-    "data": "2026-10-20",
-    "inicio": "19:40",
-    "fim": "20:00",
-    "local": "Sala “Reunião 07” — 2º andar, Quatá 200"
+  "mariacamrm": {
+    "nome": "MARIA CLARA ANTUNES MOTTA ROMERA MOLINA",
+    "horas": 15
   },
-  "mariaertv": {
-    "nome": "Maria Eduarda Reale Tallavasso Vassovinio",
-    "data": "2026-10-23",
-    "inicio": "11:10",
-    "fim": "11:30",
-    "local": "Sala “Reunião 01” — Quatá 300 — térreo do Edifício Claudio Haddad"
+  "mariaes3": {
+    "nome": "MARIA EDUARDA DOS SANTOS",
+    "horas": 20
   },
-  "isadorampg": {
-    "nome": "Isadora Matos Pires Guerra",
-    "data": "2026-10-22",
-    "inicio": "16:20",
-    "fim": "16:40",
-    "local": "Sala “Reunião 04” — Quatá 300 — térreo do Edifício Claudio Haddad"
+  "marialbj": {
+    "nome": "MARIA LUIZA BAHIA DE JESUS",
+    "horas": 20
   },
-  "luiserah": {
-    "nome": "Luis Ernesto Rowland Abreu Hudson",
-    "data": "2026-10-23",
-    "inicio": "10:50",
-    "fim": "11:10",
-    "local": "Sala “Reunião 01” — Quatá 300 — térreo do Edifício Claudio Haddad"
+  "pedrobm6": {
+    "nome": "PEDRO BENTO MICHELATO",
+    "horas": 15
   },
-  "sophiaebs": {
-  "nome": "Sophia Elisa Batista dos Santos",
-  "data": "2026-10-26",
-  "inicio": "13:00",
-  "fim": "13:20",
-  "local": "Sala “Reunião 05” — Quatá 300 — térreo do Edifício Claudio Haddad"
-},
-  "juliacvf": {
-    "nome": "Julia de Carvalho Vexel Fontes",
-    "data": "2026-10-22",
-    "inicio": "18:00",
-    "fim": "18:20",
-    "local": "Sala “Reunião 04” — Quatá 300 — térreo do Edifício Claudio Haddad"
+  "ricardobsb": {
+    "nome": "RICARDO BENJAMIM SALMOS BESSA",
+    "horas": 10
   },
-  "giovannasf3": {
-    "nome": "Giovanna da Silva Ferraz",
-    "data": "2026-10-22",
-    "inicio": "16:00",
-    "fim": "16:20",
-    "local": "Sala “Reunião 04” — Quatá 300 — térreo do Edifício Claudio Haddad"
+  "saracb": {
+    "nome": "SARA CEPIL BELO",
+    "horas": 20
   },
-  "nicolemm2": {
-    "nome": "Nicole Marques Machado",
-    "data": "2026-10-22",
-    "inicio": "13:00",
-    "fim": "13:20",
-    "local": "Sala “Reunião 04” — Quatá 300 — térreo do Edifício Claudio Haddad"
-  },
-  "mariacsb3": {
-    "nome": "Maria Clara Siqueira Barros",
-    "data": "2026-10-22",
-    "inicio": "13:20",
-    "fim": "13:40",
-    "local": "Sala “Reunião 04” — Quatá 300 — térreo do Edifício Claudio Haddad"
-  },
-  "lucaska": {
-    "nome": "Lucas Kjaer Arippol",
-    "data": "2026-10-22",
-    "inicio": "13:40",
-    "fim": "14:00",
-    "local": "Sala “Reunião 04” — Quatá 300 — térreo do Edifício Claudio Haddad"
-  },
-  "ceciliasg2": {
-    "nome": "Cecilia dos Santos Goes",
-    "data": "2026-10-22",
-    "inicio": "14:00",
-    "fim": "14:20",
-    "local": "Sala “Reunião 04” — Quatá 300 — térreo do Edifício Claudio Haddad"
-  },
-  "djairodsf": {
-    "nome": "Djairo Dantas da Silva Filho",
-    "data": "2026-10-22",
-    "inicio": "14:20",
-    "fim": "14:40",
-    "local": "Sala “Reunião 04” — Quatá 300 — térreo do Edifício Claudio Haddad"
-  },
-  "beatrizbsa": {
-    "nome": "Beatriz Benigna Sales Armstrong",
-    "data": "2026-10-22",
-    "inicio": "14:40",
-    "fim": "15:00",
-    "local": "Sala “Reunião 04” — Quatá 300 — térreo do Edifício Claudio Haddad"
-  },
-  "arturcp1": {
-    "nome": "Artur Cortes Panhoca",
-    "data": "2026-10-22",
-    "inicio": "15:00",
-    "fim": "15:20",
-    "local": "Sala “Reunião 04” — Quatá 300 — térreo do Edifício Claudio Haddad"
-  },
-  "juliamh2": {
-    "nome": "Julia Mendes Huber",
-    "data": "2026-10-22",
-    "inicio": "15:20",
-    "fim": "15:40",
-    "local": "Sala “Reunião 04” — Quatá 300 — térreo do Edifício Claudio Haddad"
-  },
-  "luisalcs": {
-    "nome": "Luis Antonio Leal Coelho Siciliano",
-    "data": "2026-10-22",
-    "inicio": "15:40",
-    "fim": "16:00",
-    "local": "Sala “Reunião 04” — Quatá 300 — térreo do Edifício Claudio Haddad"
-  },
-  "lucassm16": {
-    "nome": "Lucas Serra Marchesini",
-    "data": "2026-10-22",
-    "inicio": "16:40",
-    "fim": "17:00",
-    "local": "Sala “Reunião 04” — Quatá 300 — térreo do Edifício Claudio Haddad"
-  },
-  "rafaelactf": {
-    "nome": "Rafaela Coelho Tosetto Fagundes",
-    "data": "2026-10-22",
-    "inicio": "17:00",
-    "fim": "17:20",
-    "local": "Sala “Reunião 04” — Quatá 300 — térreo do Edifício Claudio Haddad"
-  },
-  "luigimv": {
-    "nome": "Luigi Montini Verderio",
-    "data": "2026-10-22",
-    "inicio": "17:20",
-    "fim": "17:40",
-    "local": "Sala “Reunião 04” — Quatá 300 — térreo do Edifício Claudio Haddad"
-  },
-  "manoelass1": {
-    "nome": "Manoela Sola Saragoca",
-    "data": "2026-10-22",
-    "inicio": "18:30",
-    "fim": "18:50",
-    "local": "Sala “Reunião 04” — Quatá 300 — térreo do Edifício Claudio Haddad"
-  },
-  "luisatc3": {
-    "nome": "Luis Akissue Teixeira Cintra",
-    "data": "2026-10-22",
-    "inicio": "19:00",
-    "fim": "19:20",
-    "local": "Sala “Reunião 04” — Quatá 300 — térreo do Edifício Claudio Haddad"
-  },
-  "raphaelaea": {
-    "nome": "Raphaela Elisabete Avi",
-    "data": "2026-10-22",
-    "inicio": "19:20",
-    "fim": "19:40",
-    "local": "Sala “Reunião 04” — Quatá 300 — térreo do Edifício Claudio Haddad"
-  },
-  "eronms": {
-    "nome": "Eron de Miranda Stawinski",
-    "data": "2026-10-22",
-    "inicio": "19:40",
-    "fim": "20:00",
-    "local": "Sala “Reunião 04” — Quatá 300 — térreo do Edifício Claudio Haddad"
-  },
-  "gabrielarb5": {
-    "nome": "Gabriela Rocha Bezerra",
-    "data": "2026-10-23",
-    "inicio": "09:30",
-    "fim": "09:50",
-    "local": "Sala “Reunião 01” — Quatá 300 — térreo do Edifício Claudio Haddad"
-  },
-  "cristtianar": {
-    "nome": "Cristtian Araujo Rocha",
-    "data": "2026-10-23",
-    "inicio": "09:50",
-    "fim": "10:10",
-    "local": "Sala “Reunião 01” — Quatá 300 — térreo do Edifício Claudio Haddad"
-  },
-  "ninaqc": {
-    "nome": "Nina Querino Cuevas",
-    "data": "2026-10-23",
-    "inicio": "10:10",
-    "fim": "10:30",
-    "local": "Sala “Reunião 01” — Quatá 300 — térreo do Edifício Claudio Haddad"
-  },
-  "manuelapc": {
-    "nome": "Manuela Paschoal Cateb",
-    "data": "2026-10-23",
-    "inicio": "10:30",
-    "fim": "10:50",
-    "local": "Sala “Reunião 01” — Quatá 300 — térreo do Edifício Claudio Haddad"
-  },
-  "enzofb": {
-    "nome": "Enzo Fernandes Brito",
-    "data": "2026-10-26",
-    "inicio": "09:20",
-    "fim": "09:40",
-    "local": "Sala “Reunião 03” — Quatá 300 — térreo do Edifício Claudio Haddad"
-  },
-  "andremmra": {
-    "nome": "Andre Marques Moraes Ramos de Assumpcao",
-    "data": "2026-10-26",
-    "inicio": "09:40",
-    "fim": "10:00",
-    "local": "Sala “Reunião 03” — Quatá 300 — térreo do Edifício Claudio Haddad"
-  },
-  "lauraacd": {
-    "nome": "Laura Assis Cosenza Dourado",
-    "data": "2026-10-26",
-    "inicio": "10:00",
-    "fim": "10:20",
-    "local": "Sala “Reunião 03” — Quatá 300 — térreo do Edifício Claudio Haddad"
-  },
-  "anacb8": {
-  "nome": "Ana Clara Bernardes",
-  "data": "2026-10-26",
-  "inicio": "13:20",
-  "fim": "13:40",
-  "local": "Sala “Reunião 05” — Quatá 300 — térreo do Edifício Claudio Haddad"
-},
-  "mariacbs3": {
-  "nome": "Maria Clara Brisda dos Santos",
-  "data": "2026-10-26",
-  "inicio": "15:20",
-  "fim": "15:40",
-  "local": "Sala “Reunião 05” — Quatá 300 — térreo do Edifício Claudio Haddad"
-},
-  "joaoplb2": {
-  "nome": "Joao Pedro Leite de Brito",
-  "data": "2026-10-26",
-  "inicio": "15:40",
-  "fim": "16:00",
-  "local": "Sala “Reunião 05” — Quatá 300 — térreo do Edifício Claudio Haddad"
-}
+  "viniciusegs": {
+    "nome": "VINICIUS EDUARDO GOMEZ DOS SANTOS",
+    "horas": 30
+  }
 };
 
 function mostrarMensagem() {
@@ -401,61 +131,29 @@ function mostrarMensagem() {
         mostrarErro("Digite seu usuário do Insper.");
         return;
     }
-
     if (entrada.includes("@")) {
         mostrarErro("Digite apenas seu usuário, sem o e-mail.");
         return;
     }
-
-    const usuario = entrada;
-
-    if (!Object.hasOwn(entrevistas, usuario)) {
+    if (!Object.hasOwn(participantes, entrada)) {
         mostrarErro("Usuário não encontrado. Confira seu usuário do Insper.");
         return;
     }
 
-    const entrevista = entrevistas[usuario];
-    const saudacao = document.createElement("p");
+    const participante = participantes[entrada];
+    const mensagem = document.createElement("p");
     const nome = document.createElement("strong");
-    nome.textContent = entrevista.nome;
-    saudacao.append("Prezado ", nome, ", segue a confirmação do seu agendamento:");
+    nome.textContent = participante.nome;
+    const horas = document.createElement("strong");
+    horas.textContent = `${participante.horas.toLocaleString("pt-BR")}h complementares`;
+    mensagem.append("Olá ", nome, " você deverá cadastrar ", horas, "!");
 
-    const data = new Date(entrevista.data + "T12:00:00-03:00");
-    const dataFormatada = new Intl.DateTimeFormat("pt-BR", {
-        day: "numeric", month: "long", timeZone: "America/Sao_Paulo"
-    }).format(data);
-    const local = entrevista.local.trim() || LOCAL_PADRAO.trim() || "a confirmar";
-    const localFormatado = local.toLowerCase() === "a confirmar" ? "a confirmar" : local;
-    const detalhes = document.createElement("ul");
-    const campos = [
-        ["📅 Data e horário da entrevista:", `${dataFormatada}, ${entrevista.inicio}`],
-        ["📍Local:", localFormatado.endsWith(".") ? localFormatado : `${localFormatado}.`]
-    ];
-    for (const [rotulo, valor] of campos) {
-        const item = document.createElement("li");
-        const destaque = document.createElement("strong");
-        destaque.textContent = rotulo;
-        item.append(destaque, ` ${valor}`);
-        detalhes.append(item);
-    }
-
-    const despedida = document.createElement("p");
-    despedida.textContent = "Nos vemos em breve! 💙";
-    const assinatura = document.createElement("p");
-    assinatura.className = "assinatura";
-    const equipe = document.createElement("strong");
-    equipe.textContent = "Equipe de Experiência Internacional & Equipe Buddy Program";
-    const area = document.createElement("em");
-    area.textContent = "Student Life";
-    assinatura.append(equipe, document.createElement("br"), area);
-    resultado.append(saudacao, detalhes, despedida, assinatura);
+    const agradecimento = document.createElement("p");
+    agradecimento.textContent = "Obrigado pela sua dedicação!";
+    resultado.append(mensagem, agradecimento);
 }
 
 document.getElementById("busca").addEventListener("submit", (evento) => {
     evento.preventDefault();
     mostrarMensagem();
 });
-
-
-
-

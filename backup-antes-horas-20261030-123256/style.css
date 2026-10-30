@@ -1,0 +1,47 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+:root { font-family: Arial, Helvetica, sans-serif; color: #202634; background: #172335; }
+body {
+    min-height: 100vh; min-height: 100svh;
+    background: linear-gradient(rgba(10, 20, 35, .42), rgba(10, 20, 35, .58)), url("fundo.png") center / cover no-repeat fixed;
+    display: flex; justify-content: center; align-items: flex-start;
+    padding: clamp(28px, 8vh, 88px) 24px;
+}
+.container {
+    width: 100%; max-width: 720px;
+    padding: clamp(28px, 5vw, 52px);
+    background: rgba(255, 255, 255, .97);
+    border: 1px solid rgba(255, 255, 255, .7); border-radius: 24px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, .24);
+}
+.cabecalho { margin-bottom: 34px; }
+.subtitulo { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; font-size: .9rem; font-weight: 700; color: #3453a0; margin-bottom: 18px; }
+.subtitulo span { background: #eaf0ff; border-radius: 6px; padding: 5px 8px; font-size: .8rem; }
+h1 { font-size: clamp(2rem, 5vw, 2.7rem); letter-spacing: -.035em; line-height: 1.15; margin-bottom: 14px; }
+.instrucao { max-width: 480px; color: #596373; font-size: 1rem; line-height: 1.6; }
+.busca label { display: block; font-size: .95rem; font-weight: 700; margin-bottom: 8px; }
+.ajuda { color: #596373; font-size: .875rem; line-height: 1.5; margin-bottom: 14px; }
+.campos-busca { display: flex; align-items: stretch; gap: 12px; }
+input, button { font: inherit; min-height: 52px; border-radius: 10px; }
+input { width: 100%; min-width: 0; flex: 1; border: 1px solid #b7c0ce; background: #fff; padding: 14px 16px; color: #202634; }
+input::placeholder { color: #737c89; }
+button { border: 0; background: #2d5be3; color: #fff; padding: 14px 24px; font-weight: 700; cursor: pointer; transition: background .15s; }
+button:hover { background: #2046b4; }
+input:focus-visible, button:focus-visible { outline: 3px solid #2d5be3; outline-offset: 3px; }
+#resultado { overflow-wrap: anywhere; }
+#resultado:not(:empty) { margin-top: 30px; padding: 24px; background: #f3f6fc; border: 1px solid #dfe6f1; border-radius: 14px; }
+.erro { color: #b42318; line-height: 1.6; }
+@media (max-width: 540px) {
+    body { padding: 24px 16px; }
+    .container { padding: 28px 22px; border-radius: 18px; }
+    .cabecalho { margin-bottom: 28px; }
+    .campos-busca { flex-direction: column; }
+    button { width: 100%; }
+    #resultado:not(:empty) { padding: 20px 16px; }
+}
+
+#resultado { font-size: 1rem; line-height: 1.75; }
+#resultado p + p { margin-top: 20px; }
+#resultado ul { margin: 22px 0; padding-left: 24px; }
+#resultado li + li { margin-top: 12px; }
+#resultado .assinatura { margin-top: 28px; }
+#resultado .assinatura em { color: #596373; }
